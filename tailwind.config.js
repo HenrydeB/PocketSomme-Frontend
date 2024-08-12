@@ -9,9 +9,12 @@ export default {
       colors:{
         burgundy: '#800020',
         cream: '#F5F5DC'
+      },
+      fontFamily: {
+        default: ['"Open Sans"']
       }
     },
   },
-  plugins: [],
+  plugins: [  ],
 }
 

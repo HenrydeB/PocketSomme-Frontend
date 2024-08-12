@@ -17,7 +17,7 @@ const Navigation: React.FC = () => {
                 </Link>
             
                 <div className="nav-links-container w-1/2 h-full flex items-center justify-end pr-[10px]">
-                    <Link className="nav-link px=[15px] py-[10x] cursor-pointer" to ={'/auth'}>
+                    <Link className="nav-link px=[15px] py-[10x] cursor-pointer text-cream font-default hover:underline" to ={'/auth'}>
                         SIGN IN
                     </Link>
                 </div>

@@ -32,12 +32,12 @@ const SignUpForm: React.FC = () => {
         try{
             //await createUserDocumentFromAuth(user, {displayName})
             resetFormFields();
-        }catch(ex: any){
-            if(ex.code === 'auth/email-already-in-use'){
+        }catch(ex){
+            /*if(ex.code === 'auth/email-already-in-use'){
                 alert("cannot create account, email already in use!");
             } else {
                 console.log("user creation encountered an exception", ex);
-            }
+            }*/
         }
     }
 
@@ -48,8 +48,8 @@ const SignUpForm: React.FC = () => {
 
     return(
         <div className="sign-up-container">
-            <h2>Don't have an account?</h2>
-            <span>Sign up with your email and password</span>
+            <h2 className="font-default text-2xl">Don't have an account?</h2>
+            <span className="font-default">Sign up with your email and password</span>
             <form onSubmit={handleSubmit}>
                 <FormInput label="Display Name" type="text" required onChange={handleChange} name="displayName" value={displayName}/>
 
