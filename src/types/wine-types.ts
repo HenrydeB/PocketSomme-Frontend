@@ -1,3 +1,8 @@
-
-export type WineFormFields = 'name' | 'country' | 'region' 
-                                |'vintage' | 'alcohol' | 'style' | 'varietals';
+export type WineFormFields =
+    | 'name'
+    | 'country'
+    | 'region'
+    | 'vintage'
+    | 'alcohol'
+    | 'style'
+    | 'varietals';
